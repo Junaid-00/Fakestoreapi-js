@@ -106,13 +106,14 @@ function ShowCart() {
         let tdSpace = document.createElement('td')
          let tdTotal = document.createElement('td')
         let tdfinal = document.createElement('td')
+        let tdSpace1 = document.createElement('td')
         tdTotal.innerHTML = "Total"
         tdTotal.className = 'fw-bold'
         tdfinal.innerHTML = '$'+''+price
         tdfinal.className = "fs-3 fw-b"
 
         trfoot.appendChild(tdSpace)
-        
+        trfoot.appendChild(tdSpace1)
          trfoot.appendChild(tdTotal)
          trfoot.appendChild(tdfinal)
          document.querySelector('tfoot').appendChild(trfoot)
