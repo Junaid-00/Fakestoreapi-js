@@ -1,0 +1,141 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="./src/index.css">
+    <link rel="shortcut icon" href="./public/images/logo.JPG">
+    <title>FakeShop</title>
+    <script src="./src/index.js"></script>
+    
+</head>
+<body class="container-fluid" onload="LoadBody()">
+    <header class="d-flex fixed-top bg-light justify-content-between  shadow ">
+        <div>
+            <nav class="navbar text-bg-light ms-3">
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample">
+                  <span class="navbar-toggler-icon "></span>
+                </button>
+                
+                </div>  
+              </nav>
+        </div>
+        <div>
+             <img src="./public/images/logo.JPG" width="120" height="60">
+        </div>
+        <div >
+            <button data-bs-toggle="modal" onclick="ShowCart()" data-bs-target="#Cart" class="btn bi bi-cart4 fs-3 position-relative"><span id="cartCount" class="position-absolute top-0 end-0 fs-6 badge rounded-1 text-bg-danger"></span></button>
+           <button class="btn"> <span class="bi bi-person-fill fs-2"></span></button>
+            
+        </div>
+    </header>
+   <section class="row">
+   
+    <main id="carousel">
+      <div class="carousel slide carousel-dark mb-1" id="banner" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="5000">
+                <img src="./public/images/courosel-1.JPG" width="100%" height="400">
+
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="./public/images/courosel-2.JPG" width="100%" height="400">
+
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <img src="./public/images/courosel-3.JPG" width="100%" height="400">
+
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="./public/images/courosel-4.JPG" width="100%" height="400">
+
+        </div>
+
+        </div>
+        <button class="carousel-control-prev" data-bs-target="#banner" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+
+        </button>
+        <button class="carousel-control-next" data-bs-target="#banner" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+
+        </button>
+        <button class="carousel-control-next" data-bs-target="#banner" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+
+          <button class="carousel-control-next" data-bs-target="#banner" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+  
+      </button>
+        <div class="carousel-indicators">
+            <button data-bs-slide-to="0" class="active" data-bs-target="#banner"></button>
+            <button data-bs-slide-to="1" data-bs-target="#banner"></button>
+            <button data-bs-slide-to="2" data-bs-target="#banner"></button>
+            <button data-bs-slide-to="3" data-bs-target="#banner"></button>
+        </div>
+
+    </div>
+    
+    </main>
+    <div class="row">
+      <nav id="categories" class="col-3">
+     
+      </nav>
+      <main id="products"  class="col-9 d-flex flex-wrap">
+       
+    
+      </main>
+    </div>
+    <footer class="text-bg-secondary">
+      <div class="text-center p-2" >&copy;2024 Copyright FakeShop</div>
+    </footer>
+   </section>
+
+   <div class="modal fade" id="Cart">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Your Items</h3>
+          <button class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+            <table class="table table-hover">
+              <thead>
+                  <tr>
+                      <th>Title</th>
+                      <th>Preview</th>
+                      <th>Price</th>
+                      <th>Remove</th>
+                      
+                  </tr>
+              </thead>
+              <tbody>
+               
+              </tbody>
+              <tfoot>
+
+              </tfoot>
+
+            </table>
+        </div>
+
+      </div>
+
+    </div>
+    
+   </div>
+   <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <img src="./public/images/logo.JPG" width="120" height="60">
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <input type="text" class="form-control" placeholder="Type to search..">
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>
